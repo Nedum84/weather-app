@@ -1,11 +1,12 @@
 import { SAVE_CAPITAL, SELECTED_CAPITAL } from "../types/action.types";
 
-const INITIAL_STATE = {
+const initialState = {
   capitals: ["Abuja"],
   selectedCapital: "",
 };
+
 //--> Dispatch state reducer for
-const reducer = (state = INITIAL_STATE, action) => {
+export default function reducer(state = initialState, action) {
   switch (action.type) {
     case SAVE_CAPITAL:
       return state.capitals.length === 0
@@ -17,6 +18,4 @@ const reducer = (state = INITIAL_STATE, action) => {
     default:
       return state;
   }
-};
-
-export default reducer;
+}
