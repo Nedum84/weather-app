@@ -3,12 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.21.4",
+    "countrycitystatejson": "^20.8.9-a",
     "create-react-app": "^1.4.3",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-redux": "^7.2.5",
+    "react-router-dom": "^5.3.0",
     "react-scripts": "1.0.17",
-    "save": "^2.3.1"
+    "redux": "^4.1.1",
+    "redux-thunk": "^2.3.0",
+    "save": "^2.3.1",
+    "styled-components": "^5.3.1"
   },
   "scripts": {
     "start": "HOST=0.0.0.0 PORT=8000 ./node_modules/.bin/react-scripts start",
