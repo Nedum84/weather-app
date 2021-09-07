@@ -13,6 +13,9 @@ export const HomeContainer = styled.div`
     text-align: center;
     a {
       text-decoration: none;
+      h1 {
+        margin-top: 0.5rem;
+      }
       &.add-capital {
         margin-top: 1rem;
         font-size: 4rem;
