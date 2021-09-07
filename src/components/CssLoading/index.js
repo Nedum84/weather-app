@@ -18,6 +18,7 @@ const CssLoading = () => {
 export default CssLoading;
 
 const Container = styled.div`
+  text-align: center;
   .lds-ellipsis {
     display: inline-block;
     position: relative;

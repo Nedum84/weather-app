@@ -10,6 +10,9 @@ export const WeatherContainer = styled.div`
   .error {
     font-size: 1.6rem;
   }
+  @media only screen and (max-width: 768px) {
+    padding: 1.2rem;
+  }
 `;
 
 export const Content = styled.section`
@@ -49,13 +52,15 @@ export const WeatherDetail = styled.div`
   justify-content: center;
   width: 100%;
   margin-top: 10px;
+  img {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
   span {
     color: ${COLORS.blueLight};
     font-size: 1.4rem;
     font-weight: 200;
-  }
-  img {
-    width: 3.2rem;
-    height: 3.2rem;
+    display: inline-block;
+    margin-left: 1rem;
   }
 `;

@@ -54,6 +54,8 @@ function WeatherInfo() {
     }
     return <img src={ICONS.cloud} alt="cloud day" />;
   };
+  const tempInDegree =
+    weatherCoord && (weatherCoord.main.temp - 273.15).toFixed(0);
   return (
     <WeatherContainer>
       <Navbar />
@@ -74,7 +76,7 @@ function WeatherInfo() {
             {/* Weather details  */}
             <WeatherDetail>
               <img src={ICONS.thermometer} alt="temperature" />
-              <span>{(weatherCoord.main.temp - 273.15).toFixed()} °C</span>
+              <span>{tempInDegree} °C</span>
             </WeatherDetail>
             <WeatherDetail>
               <img src={ICONS.sunrise} alt="sunrise icon" />

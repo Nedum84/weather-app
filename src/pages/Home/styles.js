@@ -7,6 +7,8 @@ export const HomeContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 2.4rem;
+
   div.section {
     text-align: center;
     a {
@@ -17,5 +19,8 @@ export const HomeContainer = styled.div`
         color: #01fe40;
       }
     }
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 1.2rem;
   }
 `;
