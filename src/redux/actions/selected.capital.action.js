@@ -5,3 +5,12 @@ export const saveSelectedCapital = (capital) => {
     dispatch({ type: SELECTED_CAPITAL, capital });
   };
 };
+// export const saveSelectedCapital = (capital) => {
+//   return (dispatch) => {
+//     dispatch(save(capital));
+//   };
+
+//   function save(capital) {
+//     return { type: SELECTED_CAPITAL, capital };
+//   }
+// };
